@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main class="background">
+        <form id="log_in">
+            <div class="login_form">
+                <h2>Tic-Tac-Toe</h2>
+                <label class="Name1">
+                    <span>Player X</span>
+                    <input type="text" placeholder="Nickname" class="text" name="Name1" id="Name1" maxlength="10">
+                </label>
+                <label class="Name2">
+                    <span>Player O</span>
+                    <input type="text" placeholder="Nickname" class="text" name="Name2" id="Name2" maxlength="10">
+                </label>
+                <button id="playgame" class = "primary">Play!</button>
+            </div>
+        </form>
+        <div id ="board" style = "display: none">
+            <section class="title">
+                <h1>Tic-Tac-Toe</h1>
+            </section>
+            <section class="Scoreboard">
+                    <div class="scoreboard">
+                    <div class="scoreboard__name__1" id = "scoreboard__name__1">Player_X</div>
+                    <div id = "score1" class = "score">0</div>
+                    <div class="scoreboard__name__2" id = "scoreboard__name__2">Player_O</div>
+                    <div id = "score2" class = "score">0</div>
+                </div>
+            </section>
+            <section class="display">
+                Player <span class="display-player playerX">X</span>'s turn
+            </section>
+            <section class="container">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+            </section>
+            <section class="display announcer hide"></section>
+            <section class="controls">
+                <button id="reset" class = "secondary">Reset Board</button>
+               
+            </section>
+            <section class="controls">
+                 <button id="restartGame" class = "secondary">Restart Game</button>
+            </section>
+        </div>
+    </main>
+    <script src="./code.js"></script>
+</body>
+</html>
